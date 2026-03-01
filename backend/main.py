@@ -13,8 +13,8 @@ from fastapi.responses import PlainTextResponse, StreamingResponse
 from pydantic import BaseModel
 from typing import Optional
 
-from . import pgp_service as svc
-from . import metadata_service as meta
+import pgp_service as svc
+import metadata_service as meta
 
 app = FastAPI(title="CrypTonic", version="1.0.0")
 
